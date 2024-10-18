@@ -8,7 +8,7 @@ app = Flask(__name__)
 PESAPAL_CONSUMER_SECRET = "OuVah65aa8nlL4r8JwpHdoSRgcU="
 
 # Endpoint for receiving IPN notifications from Pesapal
-@app.route('pesapal/ipn', methods=['POST','GET'])
+@app.route('/pesapal/ipn', methods=['POST','GET'])
 def ipn():
     try:
         notification_data = request.get_json()
