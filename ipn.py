@@ -58,4 +58,4 @@ def home():
     return "Welcome to the IPN Payment System!"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
